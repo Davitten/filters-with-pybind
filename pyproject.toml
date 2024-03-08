@@ -1,0 +1,26 @@
+[project]
+name = "filters-with-pybind" # PyPi name
+version = "0.0.1"
+
+[build-system]
+requires = ["setuptools>=42", "pybind11>=2.10.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = false  # don't include source code
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
